@@ -1,0 +1,5 @@
+
+function dutyFree(normPrice, discount, hol){
+  const answer = Math.trunc( hol / (normPrice * (discount/100)));
+  return answer 
+}
