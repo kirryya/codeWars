@@ -1,0 +1,9 @@
+function squareDigits(num){
+   
+  const number = num.toString().split('').map(i => parseInt(i)).map(function(val) { return val * val;});
+  const number1 = number.join("");
+  const number2 = parseInt(number1);
+  
+  num = number2;
+  return num;
+}
