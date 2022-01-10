@@ -1,0 +1,13 @@
+function spinWords(string){
+  const sentence = string.split(' ');
+  let result = '';
+  sentence.map((str, i) => {
+    if (str.length >= 5){
+      sentence[i] = str.split('').reverse().join('');
+    } else {
+      sentence[i] = str;
+    }
+  result = sentence.join(' ');
+  });
+return result;
+}
