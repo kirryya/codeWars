@@ -1,0 +1,9 @@
+function findShort(s){
+let words = s.split(' ');
+  let a = Infinity;
+  
+  for (let i = 0; i < words.length; i++) {
+    a = Math.min(words[i].length, a);
+  }
+  return a;
+}
