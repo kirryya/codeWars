@@ -1,0 +1,8 @@
+function getMiddle(s) {
+    const letters = s.split('');
+    if (letters.length % 2 > 0) {
+        return letters[(letters.length - 1) / 2];
+    } else {
+        return letters[(letters.length) / 2 - 1] + letters[(letters.length) / 2];
+    }
+}
