@@ -1,0 +1,13 @@
+function oddOrEven(array) {
+    let n = 0;
+    let sum = 0;
+    while (array.length - n > 0 ) {
+        sum += array[n];
+        n++;
+    }
+    if (Math.abs(sum % 2) > 0) {
+        return "odd"
+    } else {
+        return "even"
+    }
+}
