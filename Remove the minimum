@@ -1,0 +1,7 @@
+function removeSmallest(numbers) {
+    let arr = numbers.slice();
+    const a = Math.min.apply(null, numbers);
+    const m = numbers.indexOf(a);
+    arr.splice(m,1);
+  return arr;
+}
