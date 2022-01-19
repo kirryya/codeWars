@@ -1,0 +1,13 @@
+function getSum( a,b ){
+  const arr = [];
+  let sum = 0;
+  const a1 = Math.min(a,b);
+  const b1 = Math.max(a,b);
+  for (let j = 0; j < Math.abs(b1-a1)+1; j++) {
+    arr[j] = a1+j;
+  };
+    for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  };
+  return sum;
+};
