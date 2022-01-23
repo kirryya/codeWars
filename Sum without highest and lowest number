@@ -1,0 +1,15 @@
+function sumArray(array) {
+  const max1 = Math.max.apply(null, array);
+  const min1 = Math.min.apply(null, array);
+  let sum = 0;
+  if (array == null) {
+    return 0;
+  }
+  if (array.length > 2)  {
+    for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  } return sum-max1-min1;
+  } else {
+    return 0;
+  } 
+}
