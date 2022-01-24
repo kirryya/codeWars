@@ -1,0 +1,7 @@
+var isSquare = function(n){  
+  if (n/Math.sqrt(n) === Math.sqrt(n) || n === 0) {
+    return true
+  } else { 
+    return false;
+  }
+}
