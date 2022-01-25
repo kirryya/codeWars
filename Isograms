@@ -1,0 +1,4 @@
+function isIsogram(str){
+  let arr = new Set(str.toLowerCase());
+    return arr.size === str.length;      
+}
