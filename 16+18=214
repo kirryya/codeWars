@@ -1,0 +1,22 @@
+function add(num1, num2) {
+  let arr1 = String(num1).split('').reverse().map(Number);
+  let arr2 = String(num2).split('').reverse().map(Number);
+  let result = []
+  
+  let length;
+  
+  if (arr1.length >= arr2.length) {
+    length = arr1.length;
+  } else {
+    length = arr2.length;
+  }
+  for (let i = 0; i < length; i++) {
+    const a = arr1[i] === undefined ? 0 : arr1[i];
+    const b = arr2[i] === undefined ? 0 : arr2[i];
+    result.push(a + b);
+  }
+  let num = result.reverse().join('');
+    return Number(num)
+
+
+}
