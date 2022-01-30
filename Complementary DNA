@@ -1,0 +1,6 @@
+function DNAStrand(dna){
+  let dnaArr = dna.split('');
+  let dna1 = dnaArr.map( el =>
+  el === 'A' ? el = 'T' : el === 'T' ? 'A' : el === 'C' ? 'G' : el === 'G' ? 'C' : '');
+  return dna1.join('');
+}
