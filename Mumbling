@@ -1,0 +1,5 @@
+function accum(s) {
+  let arr = s.toUpperCase().split("");
+  let arr1 = arr.map ((el, index) => el+el.toLowerCase().repeat(index));
+  return arr1.join('-');
+}
