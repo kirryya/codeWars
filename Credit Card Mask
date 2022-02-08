@@ -1,0 +1,5 @@
+function maskify(cc) {
+  let number = cc.split("");
+  let number1 = number.map((el, index) => ((number.length - index) < 5)? el : "#");
+  return number1.join("");
+}
