@@ -1,0 +1,7 @@
+function duplicateCount(text){
+  let arr = text.toLowerCase().split("");
+  let arr1 = arr.filter((el, i, arr1) => {
+    return arr1.indexOf(el) !== i && arr1.lastIndexOf(el) === i;
+  });
+  return arr1.length
+}
