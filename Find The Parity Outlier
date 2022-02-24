@@ -1,0 +1,5 @@
+function findOutlier(integers){
+  let newArray = integers.filter(f => f % 2 === 0)  
+  let newArray1 = integers.filter(f => f % 2 !== 0)
+  return newArray.length > 1 ? parseInt(newArray1.toString()) : parseInt(newArray.toString())
+}
