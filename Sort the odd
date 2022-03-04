@@ -1,0 +1,4 @@
+function sortArray(array) {
+    const odd = array.filter(el => el % 2).sort((a,b) => a - b)
+    return array.map(el => el % 2 ? odd.shift() : el)
+}
