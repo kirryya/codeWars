@@ -1,0 +1,14 @@
+function towerBuilder(nFloors) {
+ let arr = [] 
+ for (let i = 1; i <= nFloors; i++) {
+   
+    let spaces = nFloors - i
+    let space = (" ").repeat(spaces);
+   
+    let stars = (2 * i) - 1
+    let star = ("*").repeat(stars);
+   
+    arr.push(space + star + space);
+  }
+  return arr
+}
