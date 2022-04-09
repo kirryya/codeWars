@@ -1,0 +1,5 @@
+var number = function(busStops){
+  let people = 0;
+    busStops.forEach(el => people = people + el[0] - el[1]);
+    return  people
+}
