@@ -1,0 +1,7 @@
+function solution(a, b){  
+  if (Number.isInteger(a)) {
+  return a>b  ? (b+a+b).toString() : (a+b+a).toString()
+    } else {
+   return a.length>b.length ? (b+a+b).toString() : (a+b+a).toString()
+  }
+}
