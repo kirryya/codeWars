@@ -1,0 +1,12 @@
+function modifiedSum(a, n) {
+    let sum = 0
+    let sum1 = 0
+    let arr = a.map(number => Math.pow(number, n))
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    for (let i = 0; i < a.length; i++) {
+        sum1 += a[i]
+    }
+    return sum - sum1
+}
