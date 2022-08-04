@@ -1,0 +1,11 @@
+function toCamelCase(str){
+  str1 = str.split("")
+  strCamelCase = str1.map(function(el, index){
+    if(el === "-" || el === "_"){
+      el = str1[index+1].toUpperCase();
+      str1.splice(index+1, 1);
+    }
+    return el;
+  });
+  return  strCamelCase.join("")
+}
