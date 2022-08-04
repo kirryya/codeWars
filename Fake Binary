@@ -1,0 +1,11 @@
+function fakeBin(x){
+let n = []
+  for (let i = 0; i < x.length; i++){
+    if ( x[i] < "5" ) {
+      n.push(0)
+    } else {
+      n.push(1)
+    }
+  }
+  return n.join("")
+}
