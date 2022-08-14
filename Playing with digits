@@ -1,0 +1,18 @@
+function digPow(n, p){
+  let string = n.toString();
+  let result = 0;
+  for(var i = 0; i < string.length ; i++) {
+    let number = parseInt(string.charAt(i),10);
+    result +=  Math.pow(number, p + i)
+  }
+  let x = Math.pow(n,p);
+  if(result === x){
+    return p;
+    } else {
+      if(result%n === 0) {
+    return result / n;
+  } else {
+    return -1  
+   }
+  }
+}
