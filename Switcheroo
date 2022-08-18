@@ -1,0 +1,4 @@
+function switcheroo(x){
+  const letters = x.split("")
+return letters.map( l => l === 'a' ? 'b' : l === 'b' ? 'a' : 'c').join('')
+}
