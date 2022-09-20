@@ -1,0 +1,9 @@
+function amountOfPages(summary){
+  let n = 0
+  let x = 0
+  for (let i = 1; i <= summary; i++) {
+    x += i.toString().length
+    if (x == summary) n = i
+  }  
+  return n
+}
