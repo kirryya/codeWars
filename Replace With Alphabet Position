@@ -1,0 +1,12 @@
+function alphabetPosition(text) {
+  
+let message = text.toLowerCase().split(" ").join("")
+  
+let output = [];
+  for (let i = 0; i < message.length; i++) {
+    if (message.charCodeAt(i) > 96 && message.charCodeAt(i) < 123) {
+      output.push(message.charCodeAt(i) - 96);
+      }  
+ }
+  return output.join(' ')
+}
