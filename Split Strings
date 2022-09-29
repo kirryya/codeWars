@@ -1,0 +1,10 @@
+function solution(str){
+  let arr = str.split("")
+  let res = []
+  for (let i = 0; i < arr.length; i+=2) {
+    res.push(str.slice(i, i+2))
+  }
+  let newArr = res.map(el => el.length === 1 ? el+"_": el )
+     
+  return newArr
+}
