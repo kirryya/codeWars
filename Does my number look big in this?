@@ -1,0 +1,8 @@
+function narcissistic(value) {
+  let arr = String(value).split('');
+  let summ = 0;
+  for (let i = 0; i < arr.length; i = i + 1) {   
+   summ = summ + Math.pow(arr[i], arr.length)   
+ }
+  return (arr.length <= 1 || summ === value)
+}
