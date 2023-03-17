@@ -1,0 +1,13 @@
+const head = arr => arr.shift();
+
+const tail = arr => {  
+  const shifted = arr.shift();  
+  return arr;
+}
+
+const init = arr => {
+  const popped = arr.pop();
+  return arr;
+}
+
+const last = arr => arr.pop();
