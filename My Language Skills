@@ -1,0 +1,7 @@
+function myLanguages(results) {
+  let arr = [];
+  for (let language in results) {
+    results[language] >= 60 && arr.push(language)
+  }
+  return arr.sort((a,b) => results[b] - results[a]);
+}
