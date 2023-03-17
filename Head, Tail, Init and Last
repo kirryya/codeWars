@@ -1,13 +1,21 @@
-const head = arr => arr.shift();
+const head = arr => {
+  const arrHead = [...arr];
+  return arrHead.shift();
+}
 
 const tail = arr => {  
-  const shifted = arr.shift();  
-  return arr;
+  const arrTail = [...arr];
+  const shifted = arrTail.shift(); 
+  return arrTail;
 }
 
 const init = arr => {
-  const popped = arr.pop();
-  return arr;
+  const arrInit = [...arr];
+  const popped = arrInit.pop();
+  return arrInit;
 }
 
-const last = arr => arr.pop();
+const last = arr => {
+  const arrHead = [...arr];
+  return arrHead.pop();
+}
