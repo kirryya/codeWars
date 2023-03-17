@@ -1,0 +1,9 @@
+function deepCount(a){
+  let summ = 0;
+  const counter = arr => {
+    summ += arr.length;
+    arr.map(el => Array.isArray(el) && counter(el))
+  }
+  counter(a)
+ return summ;
+}
